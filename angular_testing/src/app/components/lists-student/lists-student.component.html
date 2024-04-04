@@ -1,0 +1,31 @@
+<div class="container" style="width: 80rem;">
+  <h1>Angular Sample App</h1>
+
+  <a href="#" routerLink="/sample/create" class="btn btn-success">Create New Student</a>
+
+  <table class="table table-sm">
+    <tr>
+      <th>No</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Address</th>
+      <th>Phone No</th>
+      <th width="220px">Action</th>
+    </tr>
+    <tr *ngFor="let st of student;let i=index;">
+      <td>{{ i+1 }}</td>
+      <td>{{ st.name }}</td>
+      <td>{{ st.age}}</td>
+      <td>{{ st.address }}</td>
+      <td>{{ st.phoneNo}}</td>
+      <td>
+        <a href="#" [routerLink]="['/sample', st.id, 'view']"><h4 class="btn btn-info">View</h4></a>
+        <a href="#" [routerLink]="['/sample/', st.id, 'edit']"><h4 class="btn btn-primary">Edit</h4></a>
+        <button type="button" (click)="deleteStudent(st.id)" style="border: none;"><h4 class="btn bg-danger">Delete</h4></button>
+      </td>
+    </tr>
+    <tr *ngIf="student.length == 0">
+       <td>There is no data!</td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,71 @@
+<div class="container" style="width: 50rem;padding:40px">
+
+  <div class="card" style="width: 30rem;">
+    <div class="card-header">
+      Update Student
+      </div>
+        <div class="card-body">
+          <form [formGroup]="form" (ngSubmit)="submit()">
+
+              <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input
+                      formControlName="name"
+                      id="name"
+                      name="name"
+                      type="text"
+                      [(ngModel)]="student.name"
+                      class="form-control">
+                  <div *ngIf="formData['name'].touched && formData['name'].invalid" class="alert alert-danger">
+                      <div *ngIf="formData['name'].errors && formData['name'].errors['required']">Name is required.</div>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <label for="age">Age:</label>
+                  <input
+                      formControlName="age"
+                      id="age"
+                      type="text"
+                      name="age"
+                      [(ngModel)]="student.age"
+                      class="form-control">
+                  <div *ngIf="formData['age'].touched && formData['age'].invalid" class="alert alert-danger">
+                      <div *ngIf="formData['age'].errors && formData['age'].errors['required']">Age is required.</div>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                <label for="address">Address:</label>
+                <input
+                    formControlName="address"
+                    id="address"
+                    name="address"
+                    type="text"
+                    [(ngModel)]="student.address"
+                    class="form-control">
+                <div *ngIf="formData['address'].touched && formData['address'].invalid" class="alert alert-danger">
+                    <div *ngIf="formData['address'].errors && formData['address'].errors['required']">Address is required.</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phoneNo">Phone No:</label>
+              <input
+                  formControlName="phoneNo"
+                  id="phoneNo"
+                  name="phoneNo"
+                  type="text"
+                  [(ngModel)]="student.phoneNo"
+                  class="form-control">
+              <div *ngIf="formData['phoneNo'].touched && formData['phoneNo'].invalid" class="alert alert-danger">
+                  <div *ngIf="formData['phoneNo'].errors && formData['phoneNo'].errors['required']">Phone No is required.</div>
+              </div>
+          </div>
+            <p></p>
+              <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Update</button>&nbsp;
+              <a href="#" routerLink="/sample/index" class="btn btn-primary">Back</a>
+          </form>
+    </div>
+  </div>
+</div>
