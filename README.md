@@ -40,9 +40,7 @@ CREATE TABLE IF NOT EXISTS sample_db.student
     
     address character varying(50),   
     
-    "phoneNo" character varying(20), 
-    
-    phone_no character varying(255),
+    phoneNo character varying(20), 
     
     CONSTRAINT student_pkey PRIMARY KEY (id)
 );
