@@ -27,9 +27,8 @@ npm install
 2.Create "sample_db" database and schema with owner "sample"
 
 3.Run the following Script
-
-'''CREATE TABLE IF NOT EXISTS sample_db.student
-
+-- SQL Statement:
+CREATE TABLE IF NOT EXISTS sample_db.student
 (
     id integer NOT NULL,
     
