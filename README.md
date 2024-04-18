@@ -28,6 +28,8 @@ npm install
 
 3.Run the following Script
 
+```bash
+# Run Scritp
 CREATE TABLE IF NOT EXISTS sample_db.student
 (
     id integer NOT NULL,
@@ -73,14 +75,3 @@ Implement RESTful endpoints to handle the following operations:
 ![edit1](https://github.com/AungKoLin828/spring_boot_and_angular/assets/61590535/d4bb6ccf-0655-46d2-ab72-bc1e49842845)
 ![view](https://github.com/AungKoLin828/spring_boot_and_angular/assets/61590535/2d4d2990-a144-4ed2-8a77-78cefe2be496)
 
-# Title of Your Script
-
-## Description
-Briefly describe what your script does.
-
-## Usage
-Provide instructions on how to use the script.
-
-```bash
-# Example command to run the script
-./your_script.sh arg1 arg2
