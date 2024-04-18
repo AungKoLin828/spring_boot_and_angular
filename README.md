@@ -27,9 +27,8 @@ npm install
 2.Create "sample_db" database and schema with owner "sample"
 
 3.Run the following Script
-----------------------
 
-create table if NOT EXISTS sample_db.student
+CREATE TABLE IF NOT EXISTS sample_db.student
 (
     id integer NOT NULL,
     
@@ -46,7 +45,6 @@ create table if NOT EXISTS sample_db.student
     CONSTRAINT student_pkey PRIMARY KEY (id)
 );
 
---------------
 ## Project Architecture
 
 ![arc](https://github.com/AungKoLin828/spring_boot_and_angular/assets/61590535/3a7e7843-90e3-4bc0-95ad-e3dbcafc5565)
