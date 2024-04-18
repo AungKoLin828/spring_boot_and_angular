@@ -4,22 +4,24 @@
 In this project, CRUD operation are included using springboot api and angular.
 
 ## Check out sources
-
+```bash
 git clone https://github.com/AungKoLin828/spring_boot_and_angular.git
-
+```
 ## Backend Prepare
 Import project[springboot_api]
 
 ### Install all spring-* jars into your local Maven cache
-
+```bash
 mvn install
-
+```
 ## Frond-end Prepare
 
 Import project[angular_testing]
 
 ### Install npm
+```bash
 npm install
+```
 
 ## PostgresSQL Database Setup
 1.Create "sample_db" login role with passowrd is "sample"
