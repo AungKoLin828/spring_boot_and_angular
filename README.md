@@ -29,7 +29,7 @@ npm install
 3.Run the following Script
 ----------------------
 
-CREATE TABLE IF NOT EXISTS sample_db.student
+create table if NOT EXISTS sample_db.student
 (
     id integer NOT NULL,
     
@@ -45,6 +45,7 @@ CREATE TABLE IF NOT EXISTS sample_db.student
     
     CONSTRAINT student_pkey PRIMARY KEY (id)
 );
+
 --------------
 ## Project Architecture
 
