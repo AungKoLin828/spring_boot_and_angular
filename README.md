@@ -28,10 +28,9 @@ npm install
 
 3.Run the following Script
 
-
+(
 CREATE TABLE IF NOT EXISTS sample_db.student
 (
-
     id integer NOT NULL,
     
     name character varying(20) NOT NULL,
@@ -46,7 +45,7 @@ CREATE TABLE IF NOT EXISTS sample_db.student
     
     CONSTRAINT student_pkey PRIMARY KEY (id)
 );
-
+)
 ## Project Architecture
 
 ![arc](https://github.com/AungKoLin828/spring_boot_and_angular/assets/61590535/3a7e7843-90e3-4bc0-95ad-e3dbcafc5565)
