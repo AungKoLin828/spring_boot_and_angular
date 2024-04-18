@@ -22,6 +22,9 @@ Import project[angular_testing]
 ```bash
 npm install
 ```
+## Further help
+
+To get more help on the Angular CLI use ng help or go check out the [Angular CLI Overview](https://angular.io/cli "and Command Reference") page.
 
 ## PostgresSQL Database Setup
 1.Create "sample_db" login role with passowrd is "sample"
