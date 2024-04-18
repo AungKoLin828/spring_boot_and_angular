@@ -28,10 +28,6 @@ npm install
 
 3.Run the following Script
 
--- Table: sample_db.student
-
--- DROP TABLE IF EXISTS sample_db.student;
-
 CREATE TABLE IF NOT EXISTS sample_db.student
 (
     id integer NOT NULL,
@@ -47,7 +43,6 @@ CREATE TABLE IF NOT EXISTS sample_db.student
     phone_no character varying(255) COLLATE pg_catalog."default",
     
     CONSTRAINT student_pkey PRIMARY KEY (id)
-    
 );
 
 ## Project Architecture
