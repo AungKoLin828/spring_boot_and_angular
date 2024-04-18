@@ -31,7 +31,7 @@ npm install
 3.Run the following Script
 
 ```sql
-# Run Scritp
+# Run Script
 CREATE TABLE IF NOT EXISTS sample_db.student
 (
     id integer NOT NULL,
