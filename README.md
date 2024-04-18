@@ -31,12 +31,19 @@ npm install
 
 CREATE TABLE IF NOT EXISTS sample_db.student
 (
+
     id integer NOT NULL,
+    
     name character varying(20) NOT NULL,
+    
     age integer NOT NULL, 
+    
     address character varying(50),   
+    
     "phoneNo" character varying(20), 
+    
     phone_no character varying(255),
+    
     CONSTRAINT student_pkey PRIMARY KEY (id)
 );
 
